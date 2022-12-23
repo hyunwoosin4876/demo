@@ -24,23 +24,28 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	Implementation 'org.springframework.boot:spring-boot-starter'
-    implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '3.0.0'
-    
-    // tomcat
-    implementation group: 'org.apache.tomcat.embed', name:'tomcat-edbed-jasper'
-    
-    // swagger
-    implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
-    implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
-    
-    // log
-    implementation group: 'org.bgee.log4jdbc-log4j2', name : 'log4jdbc-log4j2-jdbc4', version: '1.16'
+	implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '3.0.0'
 	
-	// mysql    
+	// mybatis
+	//implementation group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '3.0.0'
+	Implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter'
+	Implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	
+	// tomcat
+	implementation group: 'org.apache.tomcat.embed', name:'tomcat-edbed-jasper'
+	
+	// swagger
+	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+	
+	// log
+	implementation group: 'org.bgee.log4jdbc-log4j2', name : 'log4jdbc-log4j2-jdbc4', version: '1.16'
+	
+	// mysql	
 	implementation group: 'org.springframework.boot', name:'spring-boot-starter-data-jdbc'
-    runtimeOnly 'mysql:mysql-connector-java'
-    
-    // mariadb
-    implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.4.1'
-    
+	runtimeOnly 'mysql:mysql-connector-java'
+	
+	// mariadb
+	implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.4.1'
+	
 }
