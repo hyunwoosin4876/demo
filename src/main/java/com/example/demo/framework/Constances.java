@@ -1,9 +1,10 @@
 package com.example.demo.framework;
 
 public class Constances {
-	private static String DEMO_STR = "";
+	public static String DEMO_STR = "";
 	
 	// database setting 
-	private static String BASE_PACKAGE_PREFIX = "com.example.demo.bialogic.*.dao ";
-	private static String BASE_MAPPER_PATH = "classpath:mapper/*.xml";
+	public static final String BASE_PACKAGE_PREFIX = "com.example.demo.bialogic.*.dao";
+	public static final String BASE_MAPPER_PATH = "classpath:mapper/*.xml";
+	public static final String SQL_SESSION_FACTORY = "sqlSessionFactory";
 }
