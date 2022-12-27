@@ -1,11 +1,22 @@
 package com.example.demo.bizlogic.demo.service.impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.bizlogic.demo.dao.DemoDAO;
 import com.example.demo.bizlogic.demo.dto.request.DemoReqDTO;
 import com.example.demo.bizlogic.demo.dto.response.DemoResDTO;
 import com.example.demo.bizlogic.demo.service.DemoService;
 
-public class DemoServiceImpl implements DemoService {
+import lombok.extern.slf4j.Slf4j;
 
+@Service
+@Slf4j
+public class DemoServiceImpl implements DemoService {
+	
+	@Autowired
+	private DemoDAO demoDAO;
+	
 	@Override
 	public DemoResDTO demo(DemoReqDTO paramDTO) throws Exception {
 		return null;

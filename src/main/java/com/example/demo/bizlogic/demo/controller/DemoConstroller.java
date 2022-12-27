@@ -15,8 +15,14 @@ import io.swagger.annotations.ApiOperation;
 public class DemoConstroller {
 	
 	@Autowired
-	DemoService domeService;
+	private DemoService domeService; // test service
 	
+	/**
+	 * 테스트
+	 * @param paramDTO
+	 * @return
+	 * @throws Exception
+	 */
 	@ApiOperation(value="test", notes="test")
 	@RequestMapping(value="/demo/test", method={RequestMethod.POST})
 	public DemoResDTO demo(DemoReqDTO paramDTO) throws Exception {
